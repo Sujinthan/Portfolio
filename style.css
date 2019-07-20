@@ -11,11 +11,12 @@ html, body{
 .myName{
     font-size: 350% !important;
 }  
-   @media screen and (max-width: 655px) {
+   @media screen and (max-width: 575px) {
     .nav {
         position: relative;
         /*top:-75%!important; */
-        float:left;
+        float:right;
+        
         left:-50% !important; 
         /* margin: 5%; */
         border:1px solid   purple;
@@ -29,6 +30,13 @@ html, body{
     }
     .myName{
         font-size: 37.5px !important;
+    } 
+}  
+
+@media screen and (max-width: 658px) {
+
+    .myName{
+        font-size: 320% !important;
     } 
 }  
 
@@ -75,7 +83,7 @@ html, body{
     left: 0%;
     transform: translate(0%, -50%);
     padding:1%;
-    width: 75%;
+    width: 100%;
 }
 .menu{
      position: fixed;
