@@ -14,18 +14,14 @@ html, body{
    @media screen and (max-width: 575px) {
     .nav {
         position: relative;
-        /*top:-75%!important; */
         float:right;
-        
         left:-50% !important; 
-        /* margin: 5%; */
         border:1px solid   purple;
         width:100%;
     }
     .nameHolder{
-        /* font-size: calc(1vw + 6 * ((5vw - 320px) / 680)) !important; */
-        /* margin:5%; */
-        left:-25% !important; 
+        top:0% !important;
+        left:-50% !important; 
         float: right;
     }
     .myName{
@@ -33,7 +29,7 @@ html, body{
     } 
 }  
 
-@media screen and (max-width: 658px) {
+@media screen and (max-width: 658px) and (min-width:576px){
 
     .myName{
         font-size: 320% !important;
@@ -78,12 +74,11 @@ html, body{
 }
 .nameHolder{
     position: relative;
-    border:1px solid rebeccapurple;
     top:50%;
     left: 0%;
     transform: translate(0%, -50%);
     padding:1%;
-    width: 100%;
+    max-width: 67.5%;
 }
 .menu{
      position: fixed;
@@ -94,7 +89,7 @@ html, body{
 }
 .nav{
     position: relative;
-     top:50%;
+    top:50%;
     float:right;
     transform: translate(0%, -50%);
     padding:0%;
@@ -105,10 +100,9 @@ a{
     text-align: right;
 }
 .desc{
+    position: relative;
     margin-top:2.5%;
-    width:100%;
-    overflow: hidden;
-    display:table;
+    width:100vw;
     bottom: 0;
 }
 #aboutMe{
