@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Security</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="bookrow row ">
+
+            <div class="notes books">
+                <h2>Password Security</h2>
+                <p class="lead"><em> 
+                    To protect your organization and its users with password security, there are many ways you can store
+                    their passwords in your database. These are four options:
+                </em>
+                </p>
+
+                <p><strong>Option 1 – Storing passwords in plain text</strong> </p>
+                <p>This is most unsafe method and is never recommended. Storing passwords in plain text offers the least, if not any, protection to your users. Once a hacker gains access to your database, they’ll retrieve every user’s password. Since some users use the same password for every one of their accounts, the hacker has access to everything. </p>
+
+                <p><strong>Option 2 – Encrypting passwords</strong></p>
+                <p>This method is more secure than Option 1, but not the best option. Encrypting is an algorithm that converts plain text passwords into random characters. When a user enters their password, the system uses a key code that was generated during the coding of the encryption process, to convert the user’s input and search for a match in the database. To decrypt these user passwords, hackers would need that key code to retrieve every user’s password. </p>
+
+                <p><strong>Option 3 – Hashing passwords</strong> </p>
+                <p>This method is stronger than Option 2, but again, not the best option. Hashing is using a mathematical function to transform the password into random symbols and characters. When a user enters their password, the system searches for a match between the hashed user’s input with the hashed password in the database. When using the right function, hackers would need a few days to convert the random symbols and characters into the user’s password. The weakness of hashing is its inability to address the frequency of similar or same user passwords. Once a hacker converts one hashed password, then the hacker can use the same hash value to convert all hashed passwords that have similar or same values. </p>
+
+                <p><strong>Option 4 – Hashing and salting passwords</strong></p>
+                <p>This method is the best option. Before you hash the password, add salt – a fixed length of random values. Each password has its own unique salt that’s stored in plain text in the database. When a user enters their password, the user’s input is salted and hashed, which is then compared to the value stored in the database to identify a match. This method allows the hashed password to remain unique, meaning a hacker will only gain access to one user password, while other users sharing the same password aren’t affected. 
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

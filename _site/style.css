@@ -4,38 +4,59 @@
 html, body{
     margin: 0 auto;
     padding: 0 auto;
-    overflow: hidden;
     height: 100%;
+    width:100%;
 
+}
+a{
+    font-weight: 900;
+    color: black !important;
+    text-align: right;
 }
 .myName{
     font-size: 350% !important;
 }  
    @media screen and (max-width: 575px) {
+    .row{
+        padding: 5%;
+    }
     .nav {
         position: relative;
-        float:right;
+        /* float:right; */
         left:-50% !important; 
         width:100%;
+        
+    }
+    .flex-column {
+        -ms-flex-direction: row!important;
+        flex-direction: row!important;
     }
     .nameHolder{
-        top:0% !important;
-        left:-50% !important; 
+        position: relative;
+        top:50% !important;
+        left:0% !important; 
         float: right;
     }
     .myName{
         font-size: 37.5px !important;
+        font-weight: 900!important;
     } 
+    .bookrow h2{
+        font-weight: 500;
+        /* padding-left:3%; */
+    }
     .books a{
         font-weight: 300!important;
         color: black !important;
-        font-size: 12.5px !important;
+        font-size: 16.5px !important;
     }
     .bookrow{
-    top:50%;
-    left:50%!important;
-    transform: translate(0%, 0%)!important;
-
+        top:50%;
+        left:5%!important;
+        transform: translate(0, 0)!important;
+    }
+    .notes{
+        width:98%!important;
     }
     
 }  
@@ -47,85 +68,102 @@ html, body{
     } 
 }  
 
- 
-.header{
-    position: relative;
-    height: 100%;
-}
-.header h1{
-    font-family: 'Georgia', serif;
-    font-weight: 800;
-    color:#000;
+@media screen and (min-width:659px){
+    .header{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+    .header h1{
+        font-family: 'Georgia', serif;
+        font-weight: 800;
+        color:#000;
+    
+    
+    }
+    .header p {
+        font-family: 'Georgia', serif;
+        line-height: 1em;
+        font-size: 17px;
+       
+    }
+    .homeRow{
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-25%, 0%);
+        width:100%;
+        padding:0;
+        margin:0;
+        height: 100%; 
 
-
-}
-.header p {
-    font-family: 'Georgia', serif;
-    line-height: 1em;
-    font-size: 17px;
-   
-}
-.homeRow{
-    position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-25%, 0%);
-    width:100%;
-    padding:0;
-    margin:0;
-    height: 100%; 
+    }
+    .name{
+         position: fixed;
+         padding: 0 !important;
+        margin:0!important;
+        top:-50%;
+        transform: translate(0%, 0%);  
+    }
+    .nameHolder{
+        position: relative;
+        top:50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        padding:1%;
+        max-width: 67.5%;
+    }
+    .menu{
+         position: fixed;
+         top:-50%;
+        transform: translate(0%, 0%); 
+        padding: 0;
+        margin:0;
+    }
+    .nav{
+        position: relative;
+        top:50%;
+        float:right;
+        transform: translate(0%, -50%);
+        padding:0%;
+    }
+    
+    .desc{
+        position: relative;
+        margin-top:2.5%;
+        width:100vw;
+        bottom: 0;
+    }
+    #aboutMe{
+        width:100%;
+        font-weight: 200;
+    }
+    .bookrow h2{
+        font-weight: 500;
+    }
+    
+   .books{
+       padding:2%;
+       position: relative;
+       top:0%;
+       left:50%;
+       transform: translate(-50%, 5%);
+       padding:0;
+       margin:0;
+       height: 100%; 
+     
+   }
+  .list-group {
+       overflow: hidden;
+   }
+    .books a{
+        font-weight: 300!important;
+        color: black !important;
+     
+    }
+    .notes{
+        width: 37.5%;
+    }
     
 }
-.name{
-     position: fixed;
-     padding: 0 !important;
-    margin:0!important;
-    top:-50%;
-    transform: translate(0%, 0%);  
-}
-.nameHolder{
-    position: relative;
-    top:50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    padding:1%;
-    max-width: 67.5%;
-}
-.menu{
-     position: fixed;
-     top:-50%;
-    transform: translate(0%, 0%); 
-    padding: 0;
-    margin:0;
-}
-.nav{
-    position: relative;
-    top:50%;
-    float:right;
-    transform: translate(0%, -50%);
-    padding:0%;
-}
-a{
-    font-weight: 900;
-    color: black !important;
-    text-align: right;
-}
-.desc{
-    position: relative;
-    margin-top:2.5%;
-    width:100vw;
-    bottom: 0;
-}
-#aboutMe{
-    width:100%;
-    font-weight: 200;
-}
-
-.books{
-    padding-top: 1.5%;
-
-}
-.books a{
-    font-weight: 300!important;
-    color: black !important;
-}
+ 
