@@ -27,10 +27,6 @@ a{
         width:100%;
         
     }
-    .flex-column {
-        -ms-flex-direction: row!important;
-        flex-direction: row!important;
-    }
     .nameHolder{
         position: relative;
         top:50% !important;
