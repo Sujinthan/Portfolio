@@ -37,7 +37,7 @@ a{
         font-size: 37.5px !important;
         font-weight: 900!important;
     } 
-    .bookrow h2{
+    .bookrow h2, .notesrow h2{
         font-weight: 500;
         /* padding-left:3%; */
     }
@@ -46,7 +46,7 @@ a{
         color: black !important;
         font-size: 16.5px !important;
     }
-    .bookrow{
+    .bookrow, .notesrow{
         top:50%;
         left:5%!important;
         transform: translate(0, 0)!important;
@@ -58,12 +58,25 @@ a{
 }  
 
 @media screen and (max-width: 658px) and (min-width:576px){
-
+    .row{
+        padding: 5%;
+    }
     .myName{
         font-size: 320% !important;
     } 
+    .books a{
+        font-weight: 200!important;
+        color: black !important;
+        font-size: 16.5px !important;
+    }
+    .notes{
+        width:100%!important;
+    }
 }  
 
+@media screen and (min-width:659px) and (max-width:1000px){
+    
+} 
 @media screen and (min-width:659px){
     .header{
         position: relative;
@@ -137,29 +150,37 @@ a{
     .bookrow h2{
         font-weight: 500;
     }
-    
-   .books{
-       padding:2%;
+    .bookrow, .notesrow{
+        position: relative;
+        width: 100%;
+        text-align: left;
+    }
+   .books, .notes{
+       padding-top:2%!important;
        position: relative;
        top:0%;
        left:50%;
-       transform: translate(-50%, 5%);
+       transform: translate(-50%, 0%);
        padding:0;
        margin:0;
        height: 100%; 
-     
+       
    }
-  .list-group {
-       overflow: hidden;
+   .books{
+       width:auto;
    }
-    .books a{
+   .notes{
+       padding: 5%;
+       width: 75rem;
+       font-size: 1.25rem!important;
+   }
+  .list-group,.list-group-flush {
+       width: 67.5%;
+   }
+    .books a, .notes a{
         font-weight: 300!important;
         color: black !important;
      
     }
-    .notes{
-        width: 37.5%;
-    }
-    
 }
  
